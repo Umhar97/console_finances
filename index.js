@@ -117,4 +117,13 @@ for(var i = 0; i < netArray.length; i++){
 }
 
 average = Math.round((netChangeSum / 86) * 100) /100;
-console.log(average);
+
+analysis = 'Financial Analysis' + '\n' +
+'-----------------' + '\n' +
+'Total Months: ' + months + '\n' +
+'Total: $' + total + '\n' +
+'Average Change: '  + average + '\n' +
+'Greatest Increase in Profit: ' + '\n' +
+'Greatest Decrease in Profit: ' + '\n' 
+
+console.log(analysis);
