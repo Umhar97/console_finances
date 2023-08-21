@@ -104,10 +104,16 @@ for (var i = 0; i < finances.length; i++) {
       change = finances[i][i2] - net;
       net = finances[i][i2];
       netArray.push(change);
-      console.log(`total: ${total}`);
-      console.log(`change: ${change}`);
-      console.log(`net: ${net}`);
-      console.log(`netArray: ${netArray}`)
+//      console.log(`total: ${total}`);
+//      console.log(`change: ${change}`);
+//      console.log(`net: ${net}`);
+//      console.log(`netArray: ${netArray}`)
     }
   }
 }
+
+for(var i = 0; i < netArray.length; i++){
+  netChangeSum += netArray[i]
+}
+
+console.log(netChangeSum);
