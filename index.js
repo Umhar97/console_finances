@@ -96,8 +96,12 @@ var net = 0;
 var netArray = [];
 var netChangeSum = 0;
 
-for(var i = 0; i< finances.length; i++){
-  for(var i2 = 0; i2 < finances[i].length; i2++) {
-console.log(i2)
+for (var i = 0; i < finances.length; i++) {
+  for (var i2 = 0; i2 < finances[i].length; i2++) {
+    
+    if(typeof finances[i][i2] !== 'string'){
+      total += finances[i][i2]
+      console.log (total)
+    }
   }
 }
