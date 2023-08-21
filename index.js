@@ -100,8 +100,14 @@ for (var i = 0; i < finances.length; i++) {
   for (var i2 = 0; i2 < finances[i].length; i2++) {
     
     if(typeof finances[i][i2] !== 'string'){
-      total += finances[i][i2]
-      console.log (total)
+      total += finances[i][i2];
+      change = finances[i][i2] - net;
+      net = finances[i][i2];
+      netArray.push(change);
+      console.log(`total: ${total}`);
+      console.log(`change: ${change}`);
+      console.log(`net: ${net}`);
+      console.log(`netArray: ${netArray}`)
     }
   }
 }
