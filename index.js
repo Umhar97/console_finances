@@ -95,3 +95,9 @@ var analysis;
 var net = 0;
 var netArray = [];
 var netChangeSum = 0;
+
+for(var i = 0; i< finances.length; i++){
+  for(var i2 = 0; i2 < finances[i].length; i2++) {
+console.log(i2)
+  }
+}
