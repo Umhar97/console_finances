@@ -108,9 +108,12 @@ for (var i = 0; i < finances.length; i++) {
       netArray.push(change);
 
       if(change > greatest[1]){
-        greatest = [finances[i][0]], finances[i][1]
+        greatest = [finances[i][0], finances[i][1]]
       }
-      console.log(greatest)
+      
+      if(change < least[1]){
+        least = [finances[i][0], finances[i][1]]
+      }
 //      console.log(`total: ${total}`);
 //      console.log(`change: ${change}`);
 //      console.log(`net: ${net}`);
