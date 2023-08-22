@@ -95,6 +95,8 @@ var analysis;
 var net = 0;
 var netArray = [];
 var netChangeSum = 0;
+var least = ['', 999999999999999]
+var greatest = ['', 0]
 
 for (var i = 0; i < finances.length; i++) {
   for (var i2 = 0; i2 < finances[i].length; i2++) {
@@ -124,6 +126,6 @@ analysis = 'Financial Analysis' + '\n' +
 'Total: $' + total + '\n' +
 'Average Change: '  + average + '\n' +
 'Greatest Increase in Profit: ' + '\n' +
-'Greatest Decrease in Profit: ' + '\n' 
+'Greatest Decrease in Profit: ' + '\n';
 
 console.log(analysis);
